@@ -12,6 +12,12 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
+  <remote name="rbheromax"
+	  fetch="https://github.com/rbheromax" />
+
+  <remote  name="zte8930"
+	   fetch="https://github.com/zte8930" />
+
   <default revision="refs/heads/cm-11.0"
            remote="github"
            sync-c="true"
@@ -38,12 +44,14 @@
   <project path="device/common" name="CyanogenMod/android_device_common" />
   <project path="device/generic/armv7-a-neon" name="CyanogenMod/android_device_generic_armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="CyanogenMod/android_device_generic_common" groups="pdk" />
-  <project path="device/generic/goldfish" name="CyanogenMod/android_device_generic_goldfish" groups="pdk" />
-  <project path="device/generic/mips" name="CyanogenMod/android_device_generic_mips" groups="pdk" />
-  <project path="device/generic/x86" name="CyanogenMod/android_device_generic_x86" groups="pdk" />
-  <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
+  <project path="device/zte/nex" name="android_device_zte_nex" remote="zte8930" />
+  <project path="kernel/zte/nex" name="android_kernel_zte_nex" remote="zte8930" />
+  <project path="device/zte/warplte" name="android_device_zte_warplte" remote="zte8930" />
+  <project path="kernel/zte/warplte" name="android_kernel_zte_warplte" remote="zte8930" />
+  <project path="device/zte/quantum" name="android_device_zte_quantum" remote="zte8930" />
+  <project path="kernel/zte/quantum" name="android_kernel_zte_quantum" remote="zte8930" />
+  <project path="device/zte/arthur" name="android_device_zte_arthur" remote="rbheromax" revision="master" />
+  <project path="kernel/zte/arthur" name="WARP_KERNEL_26357" remote="rbheromax" revision="master" />
   <project path="device/google/accessory/arduino" name="CyanogenMod/android_device_google_accessory_arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="CyanogenMod/android_device_google_accessory_demokit" groups="device" />
   <project path="device/sample" name="CyanogenMod/android_device_sample" groups="device" />
@@ -265,6 +273,7 @@
   <project path="external/whispersystems/TextSecure" name="CyanogenMod/android_external_whispersystems_TextSecure" />
   <project path="external/whispersystems/WhisperPush" name="CyanogenMod/android_external_whispersystems_WhisperPush" />
   <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" groups="pdk" />
+  <project path="external/wpa_supplicant_8_ti" name="CyanogenMod/android_external_wpa_supplicant_8_ti" />
   <project path="external/xmlwriter" name="CyanogenMod/android_external_xmlwriter" />
   <project path="external/xmp_toolkit" name="CyanogenMod/android_external_xmp_toolkit" />
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" groups="pdk" />
